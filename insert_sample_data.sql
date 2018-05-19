@@ -1,0 +1,80 @@
+-- Note: This contains only insertions of the most necessary data, since other data can be easily produced and test on our website
+
+INSERT INTO `Student` VALUES (101, '101@gmail.com', 'Dewi Holloway', '123456', 'New York University', 'MS', 'Computer Engineering', 3.76, NULL, NULL, 'Skills: Python, Java, C++, Database Systems, MATLAB', DEFAULT);
+INSERT INTO `Student` VALUES (102, '102@gmail.com', 'Viktoria Phelps', '123456', 'University of Pennsylvania', 'PhD', 'Civil Engineering', 3.37, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (103, '103@gmail.com', 'Marlon Huerta', '123456', 'Dartmouth College', 'BS', 'Mathematics', 3.96, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (104, '104@gmail.com', 'Rhianna Ellis', '123456', 'Georgetown University', 'PhD', 'Mathematics', 3.42, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (105, '105@gmail.com', 'Chardonnay Elliott', '123456', 'Carnegie Mellon University', 'MS', 'Biology', 3.98, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (106, '106@gmail.com', 'Freja Booker', '123456', 'University of North Carolina, Chapel Hill', 'MS', 'Computer Science', 3.7, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (107, '107@gmail.com', 'Abdullah Avila', '123456', 'Harvard University', 'PhD', 'Civil Engineering', 3.92, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (108, '108@gmail.com', 'Nimra Farley', '123456', 'Rice University', 'BS', 'Mechanical Engineering', 3.43, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (109, '109@gmail.com', 'Edison Drew', '123456', 'Georgetown University', 'BS', 'Electrical Engineering', 3.24, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (110, '110@gmail.com', 'Arnav Connolly', '123456', 'New York University', 'BS', 'Chemical Engineering', 3.22, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (111, '111@gmail.com', 'Aasiyah O\'Ryan', '123456', 'Stanford University', 'BS', 'Computer Science', 3.86, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (112, '112@gmail.com', 'Bree Bolton', '123456', 'Boston University', 'PhD', 'Marketing', 3.36, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (113, '113@gmail.com', 'Sukhmani Pierce', '123456', 'Northeastern University', 'PhD', 'Computer Science', 3.18, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (114, '114@gmail.com', 'Monique Whitfield', '123456', 'Carnegie Mellon University', 'BS', 'Computer Engineering', 3.04, NULL, NULL, NULL, DEFAULT);
+INSERT INTO `Student` VALUES (115, '115@gmail.com', 'Reginald Kaye', '123456', 'Duke University', 'BS', 'Electrical Engineering', 3.74, NULL, NULL, NULL, DEFAULT);
+
+INSERT INTO `Friend` VALUES (101, 106);
+INSERT INTO `Friend` VALUES (101, 111);
+INSERT INTO `Friend` VALUES (101, 112);
+INSERT INTO `Friend` VALUES (101, 113);
+INSERT INTO `Friend` VALUES (101, 114);
+INSERT INTO `Friend` VALUES (101, 115);
+INSERT INTO `Friend` VALUES (102, 113);
+INSERT INTO `Friend` VALUES (103, 104);
+INSERT INTO `Friend` VALUES (103, 107);
+INSERT INTO `Friend` VALUES (105, 110);
+INSERT INTO `Friend` VALUES (106, 108);
+INSERT INTO `Friend` VALUES (106, 111);
+INSERT INTO `Friend` VALUES (108, 113);
+INSERT INTO `Friend` VALUES (111, 112);
+INSERT INTO `Friend` VALUES (106, 101);
+INSERT INTO `Friend` VALUES (111, 101);
+INSERT INTO `Friend` VALUES (112, 101);
+INSERT INTO `Friend` VALUES (113, 101);
+INSERT INTO `Friend` VALUES (114, 101);
+INSERT INTO `Friend` VALUES (115, 101);
+INSERT INTO `Friend` VALUES (113, 102);
+INSERT INTO `Friend` VALUES (104, 103);
+INSERT INTO `Friend` VALUES (107, 103);
+INSERT INTO `Friend` VALUES (110, 105);
+INSERT INTO `Friend` VALUES (108, 106);
+INSERT INTO `Friend` VALUES (111, 106);
+INSERT INTO `Friend` VALUES (113, 108);
+INSERT INTO `Friend` VALUES (112, 111);
+
+INSERT INTO `Friend_Request` VALUES ('2018-04-02 08:00:00', 101, 108, NULL, DEFAULT);
+INSERT INTO `Friend_Request` VALUES ('2018-01-03 08:00:00', 101, 109, NULL, DEFAULT);
+INSERT INTO `Friend_Request` VALUES ('2018-01-04 07:00:00', 101, 110, NULL, 'Read');
+INSERT INTO `Friend_Request` VALUES ('2018-01-04 07:00:00', 101, 111, NULL, 'Replied');
+INSERT INTO `Friend_Req_Reply` VALUES ('2018-01-04 07:00:00', 111, 101, '2018-01-04 14:00:00', 'Accepted', NULL, 'Read');
+
+INSERT INTO `Company` VALUES (11, 'c11@gmail.com', 'Microsoft', '654321', 'Redmond', 'Information Technology');
+INSERT INTO `Company` VALUES (12, 'c12@gmail.com', 'Google', '654321', 'Mountain View', 'Information Technology');
+INSERT INTO `Company` VALUES (13, 'c13@gmail.com', 'Bloomberg', '654321', 'New York', 'Finance');
+INSERT INTO `Company` VALUES (14, 'c14@gmail.com', 'Facebook', '654321', 'Menlo Park', 'Social Network');
+INSERT INTO `Company` VALUES (15, 'c15@gmail.com', 'Chase', '654321', 'New York', 'Bank');
+INSERT INTO `Company` VALUES (16, 'c16@gmail.com', 'Amazon', '654321', 'Seattle', 'Electronic Commerce');
+INSERT INTO `Company` VALUES (17, 'c17@gmail.com', 'Wells Fargo', '654321', 'San Francisco', 'Finance');
+INSERT INTO `Company` VALUES (18, 'c18@gmail.com', 'LinkedIn', '654321', 'Mountain View', 'Social Network');
+
+INSERT INTO `Following` VALUES (101, 11);
+INSERT INTO `Following` VALUES (101, 12);
+INSERT INTO `Following` VALUES (102, 11);
+INSERT INTO `Following` VALUES (110, 11);
+INSERT INTO `Following` VALUES (112, 13);
+INSERT INTO `Following` VALUES (112, 15);
+INSERT INTO `Following` VALUES (112, 17);
+INSERT INTO `Following` VALUES (108, 14);
+INSERT INTO `Following` VALUES (108, 18);
+
+INSERT INTO `Job` VALUES (1001, 11, 'Software Developer', NULL, NULL, 'BS, MS', 'Computer Science', '2018-03-20 09:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1002, 11, 'Software Developer', NULL, NULL, 'BS, MS', 'Computer Science', '2018-04-20 09:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1003, 12, 'Software Developer', NULL, NULL, 'BS, MS', 'Computer Science, Computer Engineering', '2018-04-20 09:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1004, 11, 'Data Scientist', NULL, NULL, 'BS', 'Computer Science, Data Science, Mathematics', '2018-04-20 09:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1005, 13, 'Data Scientist', NULL, NULL, 'BS, MS', 'Computer Science, Data Science, Computer Engineering, Electrical Engineering', '2018-04-25 13:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1006, 14, 'Marketing Assistant', NULL, NULL, 'BS', 'Marketing, Mathematics', '2018-03-10 09:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1007, 15, 'Teller', NULL, NULL, NULL, NULL, '2018-04-12 09:00:00', NULL, DEFAULT);
+INSERT INTO `Job` VALUES (1008, 15, 'Web Developer', NULL, NULL, NULL, NULL, '2018-04-12 09:30:00', NULL, DEFAULT);

@@ -1,0 +1,209 @@
+body {
+	font-size: 16px;
+	color: white;
+	margin: 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('nyu.jpg');
+}
+
+header, footer {
+	margin: 0;
+	outline: 0;
+	display: block;
+	overflow: hidden; /* to be visible even if there are no text */
+}
+
+header {
+	color: white;
+	background-color: blueviolet;
+}
+
+header p {
+	float: left;
+	margin: 0;
+	padding: 14px 16px;
+	color: white;
+	background-color: blueviolet;
+}
+
+header a {
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: white;
+	background-color: blueviolet;
+}
+
+header a.current {
+	background-color: mediumpurple;
+}
+
+.header_right {
+	float: right;
+}
+
+header a.current_right {
+	float: right;
+	background-color: mediumpurple;
+}
+
+header a:hover {
+	color: blueviolet;
+	background-color: lavender;
+}
+
+.main-container {
+    padding-top: 40px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+.main-container h1 {
+	text-align: center;
+}
+
+.main-container h2 {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.main-container form {
+	padding-top: 5px;
+}
+
+.main-container a {
+	color: paleturquoise;
+}
+
+.main-container table.filled {
+	border-collapse: collapse;
+	background-color: rgba(75, 0, 100, 0.75);
+}
+
+.main-container table.filled td,
+.main-container table.filled th {
+	border: 1px solid lavender;
+	text-align: left;
+	padding-top: 6px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	padding-right: 12px;
+}
+
+footer {
+	color: lavender;
+	padding-top: 80px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 14px;
+}
+
+.main-container-application{
+    width: 400px;
+    margin:0 auto;
+    padding-top: 30px;
+} 
+
+.main-container-application input,
+.main-container-application textarea, {
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border: none;
+    font-family: arial;
+    font-size: 16px;
+    color:#111;
+    line-height: 40px; 
+} 
+
+.main-container-application button{
+    display: block;
+    margin: 0 auto;
+	padding-left: 14px;
+	padding-right: 14px;
+    /*width: 30%;*/
+    height: 40px;
+    background-color: #A326FF;
+    border: none;
+    font-family: arial;
+    font-size: 16px;
+    color:#fff;
+    cursor: pointer;
+} 
+
+.main-container-application button:hover{
+    background-color: #8700EB;
+    color:#fff;
+} 
+
+.main-container-application h2 {
+	padding-top: 30px;
+	text-align: center;
+	color:#fff;
+}
+
+.main-container-application p {
+	
+	color:white;
+}
+
+.main-container-application{
+    width: 400px;
+    margin:0 auto;
+    padding-top: 30px;
+} 
+
+.main-container-application input{
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border: none;
+    font-family: arial;
+    font-size: 16px;
+    color:#111;
+    line-height: 40px; 
+} 
+
+.main-container-application textarea {
+	width: 90%;
+    height: 200px;
+    padding: 5%;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border: none;
+    font-family: arial;
+    font-size: 16px;
+    color:#111;
+}
+
+.main-container-application button{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 40px;
+    background-color: #A326FF;
+    border: none;
+    font-family: arial;
+    font-size: 16px;
+    color:#fff;
+    cursor: pointer;
+} 
+
+.main-container-application button:hover{
+    background-color: #8700EB;
+    color:#fff;
+} 
+
+.main-container-application h2 {
+	padding-top: 30px;
+	text-align: center;
+	color:#fff;
+}
+
