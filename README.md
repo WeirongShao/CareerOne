@@ -1,5 +1,5 @@
 In this project, my goal is to design a database that can serve as a relational backend for a new social
-networking site called Career  that focuses on graduating students looking for jobs. In particular, the site should
+networking site called Career System that focuses on graduating students looking for jobs. In particular, the site should
 allow students to sign up and post their resumes and other information. Companies can also sign up and post
 information about themselves and job announcements. Students can decide to follow certain companies (which
 means they will get all job announcements by those companies), can apply for jobs, and can friend other
